@@ -1,0 +1,13 @@
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\bin\Debug\netcoreapp3.1\MontyHallParadox.exe
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\bin\Debug\netcoreapp3.1\MontyHallParadox.deps.json
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\bin\Debug\netcoreapp3.1\MontyHallParadox.runtimeconfig.json
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\bin\Debug\netcoreapp3.1\MontyHallParadox.runtimeconfig.dev.json
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\bin\Debug\netcoreapp3.1\MontyHallParadox.dll
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\bin\Debug\netcoreapp3.1\MontyHallParadox.pdb
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\obj\Debug\netcoreapp3.1\MontyHallParadox.csprojAssemblyReference.cache
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\obj\Debug\netcoreapp3.1\MontyHallParadox.AssemblyInfoInputs.cache
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\obj\Debug\netcoreapp3.1\MontyHallParadox.AssemblyInfo.cs
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\obj\Debug\netcoreapp3.1\MontyHallParadox.csproj.CoreCompileInputs.cache
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\obj\Debug\netcoreapp3.1\MontyHallParadox.dll
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\obj\Debug\netcoreapp3.1\MontyHallParadox.pdb
+C:\Users\roomey\Desktop\c#\MontyHallParadox\MontyHallParadox\obj\Debug\netcoreapp3.1\MontyHallParadox.genruntimeconfig.cache
