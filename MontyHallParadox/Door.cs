@@ -85,12 +85,12 @@ namespace MontyHallParadox
         public static bool GetResult(List<Door> doors)
         {
             var doesWon = doors.Any(x => x.HasPrize && x.IsOpened);
-            string resultToOutput = doesWon ? "\nYou win!\n" : "\nYou lose!\n";
+            string resultToOutput = doesWon ? "Win!\n" : "Lose!\n";
             Console.WriteLine(resultToOutput);
             return doesWon;
         }
 
-        public static void MakeAnExperiment(int doorsCount, int repeatsCount, bool outputDoors)
+        public static void MakeAnExperiment(int doorsCount, int repeatsCount)
         {
             double timesWon = 0;
             for(int i = 0; i < repeatsCount; i++)
@@ -99,31 +99,49 @@ namespace MontyHallParadox
                 var firstAnswer = random.Next(1, doorsCount + 1);
 
                 Console.WriteLine($"Experiment №: {i+1}");
-                Console.WriteLine($"First answer: {firstAnswer}\n");
+                OpenDoors(doors, firstAnswer);
 
-                if (outputDoors)
+                var secondAnswer = ChangeAnswer(doors, firstAnswer);
+                OpenFinalDoor(doors, secondAnswer);
+
+                var result = GetResult(doors);
+                if (result)
                 {
-                    Console.WriteLine("Doors before opening\n");
-                    OutputDoors(doors);
+                    timesWon++;
                 }
+            }
+            double winRate = timesWon / repeatsCount;
+            Console.WriteLine("\n\n\n\n\n");
+
+            Console.WriteLine($"Repeats: {repeatsCount}");
+            Console.WriteLine($"Times Won: {timesWon}");
+            Console.WriteLine($"Win Rate: {winRate * 100}%");
+        }
+
+        public static void MakeAnExperimentWithOutput(int doorsCount, int repeatsCount)
+        {
+            double timesWon = 0;
+            for (int i = 0; i < repeatsCount; i++)
+            {
+                var doors = FillData(doorsCount);
+                var firstAnswer = random.Next(1, doorsCount + 1);
+
+                Console.WriteLine($"Experiment №: {i + 1}");
+                Console.WriteLine($"First answer: {firstAnswer}\n");
+                Console.WriteLine("Doors before opening\n");
+                OutputDoors(doors);
 
                 OpenDoors(doors, firstAnswer);
 
-                if (outputDoors)
-                {
-                    Console.WriteLine("\nDoors after opening\n");
-                    OutputDoors(doors);
-                }
+                Console.WriteLine("\nDoors after opening\n");
+                OutputDoors(doors);
 
                 var secondAnswer = ChangeAnswer(doors, firstAnswer);
                 Console.WriteLine($"Second answer: {secondAnswer}\n");
                 OpenFinalDoor(doors, secondAnswer);
 
-                if (outputDoors)
-                {
-                    Console.WriteLine($"Doors after openning final door\n");
-                    OutputDoors(doors);
-                }
+                Console.WriteLine($"Doors after openning final door\n");
+                OutputDoors(doors);
 
                 var result = GetResult(doors);
                 if (result)

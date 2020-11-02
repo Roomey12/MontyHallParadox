@@ -9,9 +9,8 @@ namespace MontyHallParadox
         static void Main(string[] args)
         {
             int doorsCount = 3;
-            int repeatsCount = 100000;
-            bool outputData = false;
-            Door.MakeAnExperiment(doorsCount, repeatsCount, outputData);
+            int repeatsCount = 1000000;
+            Door.MakeAnExperiment(doorsCount, repeatsCount);
             Console.ReadLine();
         }
     }
